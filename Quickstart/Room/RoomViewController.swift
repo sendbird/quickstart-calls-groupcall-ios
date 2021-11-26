@@ -32,7 +32,7 @@ class RoomViewController: UIViewController, RoomDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        roomIdLabel.text = room.roomId
+        roomIdLabel.text = room.customItems["title"]?.collapsed ?? room.roomId
         room.addDelegate(self, identifier: "RoomViewController")
         
         participantsCollectionView.register(UINib(nibName: "ParticipantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "participant")
@@ -57,6 +57,8 @@ class RoomViewController: UIViewController, RoomDataSource {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        roomIdLabel.text = room.customItems["title"]?.collapsed ?? room.roomId
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -140,6 +142,17 @@ extension RoomViewController: RoomDelegate {
         print("Received error: \(error) with participant: \(String(describing: participant))")
         try? room.exit()
         performSegue(withIdentifier: "unwindToMainVC", sender: self)
+    }
+    
+    func didDeleteCustomItems(deletedKeys: [String]) {
+        print("Did delete custom items for keys: \(deletedKeys)")
+    }
+    
+    func didUpdateCustomItems(updatedKeys: [String]) {
+        print("Did update custom items for keys: \(updatedKeys)")
+        if updatedKeys.contains(where: { $0 == "title" }) {
+            self.roomIdLabel.text = room.customItems["title"]?.collapsed ?? room.roomId
+        }
     }
 }
 
