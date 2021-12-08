@@ -11,7 +11,7 @@ import SendBirdCalls
 class RoomInformationViewController: UIViewController, RoomDataSource {
     @IBOutlet weak var roomIdLabel: UILabel!
     @IBOutlet weak var nicknameLabel: UILabel!
-    @IBOutlet var roomNameLabel: UILabel!
+    @IBOutlet weak var roomNameLabel: UILabel!
     
     var room: Room!
     
