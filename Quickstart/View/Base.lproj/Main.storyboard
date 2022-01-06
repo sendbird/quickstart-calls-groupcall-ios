@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JNU-X3-yOr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JNU-X3-yOr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Sign in manually-->
         <scene sceneID="jbh-hv-ZPa">
             <objects>
-                <viewController id="JNU-X3-yOr" customClass="SignInViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JNU-X3-yOr" customClass="SignInViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mc5-bp-hqm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SendBirdCall iOS ver0.0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDY-Fs-V8h">
-                                <rect key="frame" x="24" y="830" width="366" height="16"/>
+                                <rect key="frame" x="24" y="831.5" width="366" height="14.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -197,7 +197,7 @@
         <!--Settings-->
         <scene sceneID="JY7-bV-EVh">
             <objects>
-                <tableViewController id="tE1-BN-dPR" customClass="SettingsTableViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tE1-BN-dPR" customClass="SettingsTableViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="kIR-JT-Fm2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +265,7 @@
                                         <rect key="frame" x="0.0" y="158" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E5E-vw-hnQ" id="KRT-CL-AWV">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconInfo" translatesAutoresizingMaskIntoConstraints="NO" id="ast-7u-KAq">
@@ -275,7 +275,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxL-dW-2Fz">
-                                                    <rect key="frame" x="60" y="18.5" width="295" height="19.5"/>
+                                                    <rect key="frame" x="60" y="18.5" width="296.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -366,7 +366,7 @@
         <!--Application information-->
         <scene sceneID="xTa-Wj-fC4">
             <objects>
-                <viewController id="Zyz-od-Psx" customClass="ApplicationInfoViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zyz-od-Psx" customClass="ApplicationInfoViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PjS-WM-QnX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,7 +483,7 @@
         <!--Enter room-->
         <scene sceneID="2d8-kN-zTy">
             <objects>
-                <viewController id="2kN-Gd-tGD" customClass="JoinRoomViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2kN-Gd-tGD" customClass="JoinRoomViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEQ-wA-a6y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -594,16 +594,16 @@
         <!--Dial-->
         <scene sceneID="LiD-pw-LcG">
             <objects>
-                <viewController id="W0e-ZY-TaS" customClass="MainViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W0e-ZY-TaS" customClass="MainViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NxC-ho-7W3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pno-aL-qp1">
-                                <rect key="frame" x="24" y="124" width="472.5" height="225"/>
+                                <rect key="frame" x="24" y="124" width="366" height="225"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a group call in a room and share the room ID with others." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-bD-wdI">
-                                        <rect key="frame" x="24" y="94" width="416.5" height="35"/>
+                                        <rect key="frame" x="24" y="94" width="310" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="U1I-3z-GMr"/>
                                         </constraints>
@@ -612,7 +612,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsF-kw-gc4">
-                                        <rect key="frame" x="24" y="153" width="424.5" height="48"/>
+                                        <rect key="frame" x="24" y="153" width="318" height="48"/>
                                         <color key="backgroundColor" red="0.45490196078431372" green="0.1803921568627451" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="ARP-Rm-Jty"/>
@@ -681,10 +681,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-w9-XT1">
-                                <rect key="frame" x="24" y="365" width="472.5" height="233"/>
+                                <rect key="frame" x="24" y="365" width="366" height="233"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an existing room to participate in a group call." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkn-YS-roP">
-                                        <rect key="frame" x="24" y="94" width="416.5" height="35"/>
+                                        <rect key="frame" x="24" y="94" width="310" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="axZ-PW-6tu"/>
                                         </constraints>
@@ -693,7 +693,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Room ID" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-LM-Wd2">
-                                        <rect key="frame" x="24" y="153" width="424.5" height="56"/>
+                                        <rect key="frame" x="24" y="153" width="318" height="56"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="bd6-AP-S0F"/>
@@ -718,7 +718,7 @@
                                         </connections>
                                     </textField>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rt-zl-Qip">
-                                        <rect key="frame" x="396.5" y="165" width="40" height="32"/>
+                                        <rect key="frame" x="290" y="165" width="40" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="xED-qp-57Y"/>
                                         </constraints>
@@ -783,10 +783,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-rM-0Yb">
-                                <rect key="frame" x="0.0" y="44" width="520.5" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bj1-cx-SUH">
-                                        <rect key="frame" x="0.0" y="56" width="520.5" height="1"/>
+                                        <rect key="frame" x="0.0" y="56" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="e7Q-Dk-Apm"/>
@@ -832,7 +832,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o26-ao-fu4">
-                                <rect key="frame" x="0.0" y="0.0" width="520.5" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -879,7 +879,7 @@
         <!--Room View Controller-->
         <scene sceneID="Wow-oU-E7e">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="I7o-IW-SEb" customClass="RoomViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="I7o-IW-SEb" customClass="RoomViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mgD-VE-hgt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1058,7 +1058,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y4v-F2-pdl">
                                 <rect key="frame" x="0.0" y="132" width="414" height="666"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="EVr-de-aic" customClass="FlowLayout" customModule="Quickstart" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="EVr-de-aic" customClass="FlowLayout" customModule="Group_Calls" customModuleProvider="target"/>
                                 <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="I7o-IW-SEb" id="cHA-Zk-9ca"/>
@@ -1110,7 +1110,7 @@
         <!--Participants-->
         <scene sceneID="v1v-N0-XMV">
             <objects>
-                <viewController title="Participants" id="6DH-mp-dp3" customClass="ParticipantsViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Participants" id="6DH-mp-dp3" customClass="ParticipantsViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pa6-yL-OrL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1120,8 +1120,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="participant" rowHeight="56" id="f84-Es-nmx" customClass="ParticipantTableViewCell" customModule="Quickstart" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="56"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="participant" rowHeight="56" id="f84-Es-nmx" customClass="ParticipantTableViewCell" customModule="Group_Calls" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f84-Es-nmx" id="dft-4J-FPC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -1167,8 +1167,37 @@
                                             <outlet property="userIdLabel" destination="CYk-mO-Mqd" id="LDT-cQ-SEe"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="editRoomName" rowHeight="56" id="bV7-Ey-Rle" userLabel="editRoomName">
+                                        <rect key="frame" x="0.0" y="100.5" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bV7-Ey-Rle" id="H0H-tG-Q6n">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconSettings" translatesAutoresizingMaskIntoConstraints="NO" id="5T6-7U-RFh">
+                                                    <rect key="frame" x="24" y="16" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="9eV-fc-eyY"/>
+                                                        <constraint firstAttribute="width" constant="24" id="GXJ-Y1-If5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S2-wk-CK4" userLabel="Edit room name">
+                                                    <rect key="frame" x="64" y="16" width="114" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5T6-7U-RFh" firstAttribute="leading" secondItem="H0H-tG-Q6n" secondAttribute="leading" constant="24" id="Uod-CU-cLo"/>
+                                                <constraint firstItem="5S2-wk-CK4" firstAttribute="leading" secondItem="5T6-7U-RFh" secondAttribute="trailing" constant="16" id="odl-cU-EGf"/>
+                                                <constraint firstItem="5T6-7U-RFh" firstAttribute="centerY" secondItem="H0H-tG-Q6n" secondAttribute="centerY" id="poX-xn-pJd"/>
+                                                <constraint firstItem="5S2-wk-CK4" firstAttribute="top" secondItem="5T6-7U-RFh" secondAttribute="top" id="tXK-Ag-KR6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareRoomId" rowHeight="56" id="lGy-D3-jtK">
-                                        <rect key="frame" x="0.0" y="84" width="414" height="56"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGy-D3-jtK" id="0Uj-4g-sf1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -1219,12 +1248,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ose-jc-LCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3970" y="261"/>
+            <point key="canvasLocation" x="3951" y="237"/>
         </scene>
         <!--Room information-->
         <scene sceneID="Lgg-sa-fcd">
             <objects>
-                <viewController id="KS1-0M-3N7" customClass="RoomInformationViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KS1-0M-3N7" customClass="RoomInformationViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uao-0e-jS7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1241,13 +1270,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg1-Vp-4L2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg1-Vp-4L2">
                                 <rect key="frame" x="24" y="198.5" width="366" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGT-jY-uQj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGT-jY-uQj">
                                 <rect key="frame" x="24" y="177.5" width="366" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1267,15 +1296,39 @@
                                     <constraint firstAttribute="height" constant="1" id="kMD-Jx-w4U"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da3-XZ-pBg">
+                                <rect key="frame" x="24" y="272.5" width="366" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.88" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-tt-Vyn">
+                                <rect key="frame" x="24" y="251.5" width="366" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uI-LI-GGe">
+                                <rect key="frame" x="16" y="308.5" width="382" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7oy-Tu-ujS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ReQ-E3-5lR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sGT-jY-uQj" firstAttribute="top" secondItem="nzh-Un-h1t" secondAttribute="bottom" constant="16" id="4A6-zc-lGr"/>
+                            <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="Da3-XZ-pBg" secondAttribute="trailing" constant="24" id="6bJ-so-YE0"/>
                             <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="D5g-vh-9z9" secondAttribute="trailing" constant="24" id="7bL-5z-UJU"/>
+                            <constraint firstItem="Da3-XZ-pBg" firstAttribute="top" secondItem="Rwx-tt-Vyn" secondAttribute="bottom" constant="4" id="C9S-Fh-U8j"/>
+                            <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="Rwx-tt-Vyn" secondAttribute="trailing" constant="24" id="EQZ-68-BoH"/>
                             <constraint firstItem="nzh-Un-h1t" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="16" id="Gqk-ff-ATR"/>
                             <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="1o6-Zd-Zis" secondAttribute="trailing" constant="24" id="HNz-Ux-ahI"/>
+                            <constraint firstItem="Rwx-tt-Vyn" firstAttribute="top" secondItem="5xq-Rj-967" secondAttribute="bottom" constant="16" id="LO1-iM-Nt9"/>
                             <constraint firstItem="sGT-jY-uQj" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="24" id="OQB-jK-7xF"/>
+                            <constraint firstItem="3uI-LI-GGe" firstAttribute="leading" secondItem="uao-0e-jS7" secondAttribute="leading" constant="16" id="Scr-2B-13L"/>
                             <constraint firstItem="nzh-Un-h1t" firstAttribute="top" secondItem="D5g-vh-9z9" secondAttribute="bottom" constant="16" id="TYV-hQ-EgV"/>
                             <constraint firstItem="5xq-Rj-967" firstAttribute="top" secondItem="yg1-Vp-4L2" secondAttribute="bottom" constant="16" id="Uvg-p8-eRC"/>
                             <constraint firstItem="D5g-vh-9z9" firstAttribute="top" secondItem="1o6-Zd-Zis" secondAttribute="bottom" constant="4" id="ZFe-Rp-3eq"/>
@@ -1286,15 +1339,20 @@
                             <constraint firstItem="D5g-vh-9z9" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="24" id="idW-cq-Sgg"/>
                             <constraint firstItem="yg1-Vp-4L2" firstAttribute="top" secondItem="sGT-jY-uQj" secondAttribute="bottom" constant="4" id="n72-8f-V5N"/>
                             <constraint firstItem="1o6-Zd-Zis" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="24" id="piz-Wh-Tx1"/>
+                            <constraint firstItem="Rwx-tt-Vyn" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="24" id="qdv-if-o2Q"/>
+                            <constraint firstAttribute="trailing" secondItem="3uI-LI-GGe" secondAttribute="trailing" constant="16" id="rAd-k8-ADT"/>
+                            <constraint firstItem="3uI-LI-GGe" firstAttribute="top" secondItem="Da3-XZ-pBg" secondAttribute="bottom" constant="16" id="tki-s7-YLm"/>
                             <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="yg1-Vp-4L2" secondAttribute="trailing" constant="24" id="umf-b9-M20"/>
                             <constraint firstItem="ReQ-E3-5lR" firstAttribute="trailing" secondItem="sGT-jY-uQj" secondAttribute="trailing" constant="24" id="yQY-7A-R1D"/>
                             <constraint firstItem="5xq-Rj-967" firstAttribute="leading" secondItem="uao-0e-jS7" secondAttribute="leading" constant="16" id="zd2-7v-AoU"/>
+                            <constraint firstItem="Da3-XZ-pBg" firstAttribute="leading" secondItem="ReQ-E3-5lR" secondAttribute="leading" constant="24" id="zut-yr-P5q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Room information" id="40k-jS-8xk"/>
                     <connections>
-                        <outlet property="nicknameLabel" destination="yg1-Vp-4L2" id="qyf-an-hko"/>
+                        <outlet property="nicknameLabel" destination="Da3-XZ-pBg" id="GUt-VC-1zR"/>
                         <outlet property="roomIdLabel" destination="D5g-vh-9z9" id="YwJ-gN-ko0"/>
+                        <outlet property="roomNameLabel" destination="yg1-Vp-4L2" id="BMl-7d-2Fe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vB-bk-4JG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1321,12 +1379,12 @@
         <!--Share Room Id View Controller-->
         <scene sceneID="JwQ-Er-HWY">
             <objects>
-                <viewController id="pqY-UY-uxY" customClass="ShareRoomIdViewController" customModule="Quickstart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pqY-UY-uxY" customClass="ShareRoomIdViewController" customModule="Group_Calls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rmf-NQ-1Ld">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7f4-4e-uKL" customClass="ShareRoomIdView" customModule="Quickstart" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7f4-4e-uKL" customClass="ShareRoomIdView" customModule="Group_Calls" customModuleProvider="target">
                                 <rect key="frame" x="72" y="336.5" width="270" height="233.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Room created!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="914-fO-vwI">
@@ -1468,7 +1526,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2t9-aq-MbQ"/>
+        <segue reference="3i6-pS-oh5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="btnAudioOff" width="64" height="64"/>

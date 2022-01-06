@@ -20,11 +20,15 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return room.participants.count + 1
+        return room.participants.count + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == room.participants.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "editRoomName") ?? UITableViewCell()
+            cell.selectionStyle = .none
+            return cell
+        } else if indexPath.row == room.participants.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "shareRoomId") ?? UITableViewCell()
             cell.selectionStyle = .none
             return cell
@@ -39,12 +43,26 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard indexPath.row == room.participants.count else { return }
-        
-        let activityViewController = UIActivityViewController(activityItems: [room.roomId], applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = view
-        
-        present(activityViewController, animated: true, completion: nil)
+        if indexPath.row == room.participants.count {
+            let controller = UIAlertController(title: "Edit room name", message: nil, preferredStyle: .alert)
+            controller.addTextField { textField in
+                textField.placeholder = "Room name"
+            }
+            controller.addAction(UIAlertAction(title: "Edit", style: .default, handler: { _ in
+                guard let roomName = controller.textFields?.first?.text else { return }
+                self.room.updateCustomItems(customItems: ["title": roomName]) { customItems, updatedKeys, error in
+                    print("Updated custom items: \(String(describing: customItems)), updated keys: \(String(describing: updatedKeys)), error: \(String(describing: error))")
+                }
+            }))
+            controller.addAction(UIAlertAction(title: "Cancel", style: .destructive))
+            self.present(controller, animated: true)
+            
+        } else if indexPath.row == room.participants.count + 1 {
+            let activityViewController = UIActivityViewController(activityItems: [room.roomId], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = view
+            
+            present(activityViewController, animated: true, completion: nil)
+        }
     }
 }
 

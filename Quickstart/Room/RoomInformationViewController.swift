@@ -11,6 +11,7 @@ import SendBirdCalls
 class RoomInformationViewController: UIViewController, RoomDataSource {
     @IBOutlet weak var roomIdLabel: UILabel!
     @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var roomNameLabel: UILabel!
     
     var room: Room!
     
@@ -18,6 +19,7 @@ class RoomInformationViewController: UIViewController, RoomDataSource {
         super.viewDidLoad()
         
         roomIdLabel.text = room.roomId
+        roomNameLabel.text = room.customItems["title"]
         nicknameLabel.text = "User ID: \(room.createdBy)"
     }
 }

@@ -47,21 +47,31 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didTapCreateRoomButton(_ sender: Any) {
-        SendBirdCall.createRoom(with: RoomParams(roomType: .smallRoomForVideo)) { (room, error) in
-            guard error == nil, let room = room else {
-                self.presentErrorAlert(message: error?.localizedDescription ?? "Failed to create a room.")
-                return
-            }
-            
-            room.enter(with: Room.EnterParams(isVideoEnabled: true, isAudioEnabled: true)) { (error) in
-                guard error == nil else {
-                    self.presentErrorAlert(message: error?.localizedDescription ?? "Failed to enter a room.")
+        let controller = UIAlertController(title: "Create Room", message: nil, preferredStyle: .alert)
+        controller.addTextField { textField in
+            textField.placeholder = "Enter room title"
+        }
+        controller.addAction(UIAlertAction(title: "Create", style: .default) { _ in
+            let title = controller.textFields?.first?.text
+            SendBirdCall.createRoom(with: RoomParams(roomType: .smallRoomForVideo, customItems: ["title": title ?? ""])) { (room, error) in
+                guard error == nil, let room = room else {
+                    self.presentErrorAlert(message: error?.localizedDescription ?? "Failed to create a room.")
                     return
                 }
                 
-                self.performSegue(withIdentifier: "enterRoom", sender: room)
+                room.enter(with: Room.EnterParams(isVideoEnabled: true, isAudioEnabled: true)) { (error) in
+                    guard error == nil else {
+                        self.presentErrorAlert(message: error?.localizedDescription ?? "Failed to enter a room.")
+                        return
+                    }
+                    
+                    self.performSegue(withIdentifier: "enterRoom", sender: room)
+                }
             }
-        }
+        })
+        controller.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        self.present(controller, animated: true)
     }
     
     func joinRoom(_ roomId: String) {
