@@ -1,0 +1,11 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: quickstart-calls-groupcall-ios
+  descritpion: iOS Quickstart Sample for Sendbird Calls Group Call
+spec:
+  type: sample
+  lifecycle: production
+  owner: dep-client-platform
+  system: sendbird-calls
