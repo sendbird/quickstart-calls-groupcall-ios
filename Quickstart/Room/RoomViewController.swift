@@ -9,7 +9,7 @@ import UIKit
 import SendBirdCalls
 import AVKit
 
-protocol RoomDataSource: class {
+protocol RoomDataSource: AnyObject {
     var room: Room! { get set }
 }
 
