@@ -65,6 +65,7 @@ Enter the `APP_ID` of your Sendbird application created earlier, the `user_id` o
 ### Install and run the sample app
 
 1. Open `Quickstart.xcodeproj` in this folder with Xcode. Xcode resolves the `SendBirdCalls` package automatically through Swift Package Manager.
+   If the SwiftUI sample (`groupcall-swiftui`) is installed on the device, delete it first. Both samples use the same bundle identifier, and this sample shows a black screen when it is installed over the SwiftUI sample.
 2. Plug the primary iOS device into the Mac running Xcode
 3. Unlock the iOS device
 4. Run the application by pressing the `▶` **Run** button or typing `⌘+R`

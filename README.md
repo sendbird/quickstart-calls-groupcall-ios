@@ -9,9 +9,12 @@ This repository contains iOS sample apps that show how to build group voice and 
 
 | Folder | Description |
 |---|---|
+| [`groupcall-swiftui/`](groupcall-swiftui) | **Main sample.** Sample app built with SwiftUI. Requires iOS 17.0 or later and Xcode 16 or later. |
 | [`groupcall-uikit/`](groupcall-uikit) | Sample app built with UIKit and storyboards. Requires iOS 15.0 or later. |
 
-Each folder is an independent Xcode project. Open the project in the folder you want to try and follow the README in that folder.
+Each folder is an independent Xcode project. Open the project in the folder you want to try and follow the README in that folder. If you are starting a new app, start with [`groupcall-swiftui/`](groupcall-swiftui).
+
+Both apps use the same bundle identifier, `com.sendbird.calls.quickstart.rooms`. Install only one of them on a device at a time, and delete the installed one before you install the other. If you install the UIKit sample over the SwiftUI sample, iOS keeps the window scene of the SwiftUI sample, and the UIKit sample shows a black screen.
 
 ### More about Sendbird Calls for iOS
 
