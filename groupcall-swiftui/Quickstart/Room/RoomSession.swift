@@ -176,11 +176,13 @@ extension RoomSession: @preconcurrency RoomDelegate {
         refresh()
     }
 
-    func didUpdateCustomItems(updatedKeys: [String]) {
+    // Another participant changed the room's title. These are optional requirements, so check their names against
+    // `RoomDelegate`: a method with another name compiles but is never called.
+    func didCustomItemsUpdate(updatedKeys: [String]) {
         refresh()
     }
 
-    func didDeleteCustomItems(deletedKeys: [String]) {
+    func didCustomItemsDelete(deletedKeys: [String]) {
         refresh()
     }
 

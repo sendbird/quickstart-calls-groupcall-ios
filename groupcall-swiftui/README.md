@@ -76,7 +76,7 @@ To always use your own application ID, call `SendBirdCall.configure(appId:)` wit
 | Room state and controls | [`Room/RoomSession.swift`](Quickstart/Room/RoomSession.swift) | `RoomDelegate`, `LocalParticipant.muteMicrophone()`, `stopVideo()`, `switchCamera(completionHandler:)`, `Room.exit()` |
 | Show participants' videos in SwiftUI | [`Room/ParticipantVideoView.swift`](Quickstart/Room/ParticipantVideoView.swift), [`Room/ParticipantTile.swift`](Quickstart/Room/ParticipantTile.swift) | `SendBirdVideoView`, `Participant.videoView` |
 | Lay out the video grid | [`Room/ParticipantGrid.swift`](Quickstart/Room/ParticipantGrid.swift) | |
-| Room title | [`Room/RoomInformationView.swift`](Quickstart/Room/RoomInformationView.swift), [`Room/ParticipantsView.swift`](Quickstart/Room/ParticipantsView.swift) | `Room.updateCustomItems(customItems:completionHandler:)`, `RoomDelegate.didUpdateCustomItems(updatedKeys:)` |
+| Room title | [`Room/RoomInformationView.swift`](Quickstart/Room/RoomInformationView.swift), [`Room/ParticipantsView.swift`](Quickstart/Room/ParticipantsView.swift), [`Room/RoomSession.swift`](Quickstart/Room/RoomSession.swift) | `Room.updateCustomItems(customItems:completionHandler:)`, `RoomDelegate.didCustomItemsUpdate(updatedKeys:)` |
 | Choose the audio output | [`Room/AudioRoutePicker.swift`](Quickstart/Room/AudioRoutePicker.swift) | `SendBirdCall.routePickerView(frame:)` |
 
 <br />

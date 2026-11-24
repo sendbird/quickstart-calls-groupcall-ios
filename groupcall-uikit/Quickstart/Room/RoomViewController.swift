@@ -144,11 +144,11 @@ extension RoomViewController: RoomDelegate {
         performSegue(withIdentifier: "unwindToMainVC", sender: self)
     }
     
-    func didDeleteCustomItems(deletedKeys: [String]) {
+    func didCustomItemsDelete(deletedKeys: [String]) {
         print("Did delete custom items for keys: \(deletedKeys)")
     }
     
-    func didUpdateCustomItems(updatedKeys: [String]) {
+    func didCustomItemsUpdate(updatedKeys: [String]) {
         print("Did update custom items for keys: \(updatedKeys)")
         if updatedKeys.contains(where: { $0 == "title" }) {
             self.roomIdLabel.text = room.customItems["title"]?.collapsed ?? room.roomId
